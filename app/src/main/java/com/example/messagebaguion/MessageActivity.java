@@ -21,3 +21,4 @@ public class MessageActivity extends AppCompatActivity {
         tvMessage.setText(message);
     }
 }
+
