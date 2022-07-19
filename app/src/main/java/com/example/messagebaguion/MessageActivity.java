@@ -1,6 +1,8 @@
 package com.example.messagebaguion;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,5 +15,9 @@ public class MessageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
 
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(EXTRA_MESSAGE);
+        TextView tvMessage = findViewById(R.id.tvMessage);
+        tvMessage.setText(message);
     }
 }
