@@ -78,9 +78,9 @@ public class MainActivity extends AppCompatActivity {
                             Intent outIntent = result.getData();
                             boolean good = outIntent.getBooleanExtra(MessageActivity.EXTRA_RESULT, false);
                             if (good) {
-                                Toast.makeText(MainActivity.this, "This is a GOOD message", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getBaseContext(), "This is a GOOD message", Toast.LENGTH_SHORT).show();
                             } else {
-                                Toast.makeText(MainActivity.this, "This is a BAD message", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getBaseContext(), "This is a BAD message", Toast.LENGTH_SHORT).show();
                             }
                         }
                     }

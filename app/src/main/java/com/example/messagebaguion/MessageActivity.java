@@ -22,6 +22,8 @@ public class MessageActivity extends AppCompatActivity {
         String message = intent.getStringExtra(EXTRA_MESSAGE);
         TextView tvMessage = findViewById(R.id.tvMessage);
         tvMessage.setText(message);
+
+        btnSaveListenerMethod();
     }
         private void btnSaveListenerMethod(){
         Button btnSave = findViewById(R.id.btnSave);
